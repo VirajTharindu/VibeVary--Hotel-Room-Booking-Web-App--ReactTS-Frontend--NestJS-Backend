@@ -82,19 +82,19 @@ If deeper technical access is required, it can be provided upon request.
 
 | 6. Booking Engine |
 |---------------|
-| <a href="#6-booking-engine"><img src="docs/screenshots/06_Booking_Modal.png" width="800"></a> |
+| <a href="#6-booking-engine"><img src="docs/screenshots/06_Booking.png" width="800"></a> |
 
 | 7. Concierge Board |
 |---------------|
-| <a href="#7-concierge-board"><img src="docs/screenshots/07_Concierge_Board.png" width="800"></a> |
+| <a href="#7-concierge-board"><img src="docs/screenshots/07_Concierge.png" width="800"></a> |
 
 | 8. Global Chat Hub |
 |---------------|
-| <a href="#8-global-chat-hub"><img src="docs/screenshots/08_Chat_Widget.png" width="800"></a> |
+| <a href="#8-global-chat-hub"><img src="docs/screenshots/09_Chat.png" width="800"></a> |
 
 | 9. Notification Center |
 |---------------|
-| <a href="#9-notification-center"><img src="docs/screenshots/09_Notification_Center.png" width="800"></a> |
+| <a href="#9-notification-center"><img src="docs/screenshots/08_Notifications.png" width="800"></a> |
 
 ---
 
