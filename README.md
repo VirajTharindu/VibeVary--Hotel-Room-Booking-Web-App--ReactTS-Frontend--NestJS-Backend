@@ -218,5 +218,5 @@ I would be happy to discuss the architecture, design decisions, or provide a pri
 ---
 
 <p align="center">
-  <em>Immerse yourself in digital luxury. ✨🥂🌃</em>
+  <em>Immerse yourself in digital luxury! ✨🥂🌃</em>
 </p>
