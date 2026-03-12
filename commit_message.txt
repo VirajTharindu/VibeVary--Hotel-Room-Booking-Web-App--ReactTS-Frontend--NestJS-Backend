@@ -1,0 +1,37 @@
+Initial Commit: VibeVary Full-Stack Application Architecture and Implementation
+
+Core Architecture & System Design
+- Established a Decoupled Full-Stack Monorepo pattern avoiding heavy workspace managers for rapid development.
+- Architected the Backend as a NestJS Modular Monolith, enforcing strict Separation of Concerns and Dependency Injection.
+- Architected the Frontend as a React 18 Single Page Application (SPA) driven by Vite for continuous HMR.
+- Implemented a Feature-Based folder grouping strategy for the backend to ensure high domain cohesion.
+- Implemented a hybrid Role/Domain-Based folder grouping strategy for the frontend to segregate reusable UI elements from landing page domains.
+- Integrated Socket.IO for a real-time event gateway, enabling full-duplex WebSocket communication between client and server.
+- Initialized PouchDB as an embedded local NoSQL document store for rapid prototyping with API abstractions prepared for future PostgreSQL/TypeORM migration.
+
+Feature Implementations (Frontend)
+- Built the "Infinite Suite Carousel" with physics-based high-tension dragging using Framer Motion.
+- Developed the "Interactive Notification Center" as a lateral sliding panel to track live hotel events and booking confirmations.
+- Implemented a highly dynamic "Booking Engine Modal" strictly enforcing live occupancy checks against the backend.
+- Developed the "Live Concierge Board", an interactive portal for submitting room service and spa requests.
+- Integrated a global "Chat Hub" widget for continuous guest-to-staff communication.
+- Implemented Dynamic Pricing logic calculating nightly rates based on base thresholds and capacity.
+- Designed the "Quiet Luxury" aesthetic utilizing Midnight Blacks (#0a0306) and Rose/Crimson (#E11D48) palettes.
+- Utilized high-tension springs (damping: 25, stiffness: 200) via GSAP and Framer Motion for premium UI physics, replacing standard CSS linear transitions.
+
+Refactoring & Clean Code Practices
+- Refactored the monolithic App.tsx into a strictly modular component hierarchy.
+- Extracted global TypeScript interfaces into shared types directories.
+- Segregated API and WebSocket connection logic into dedicated service hooks to decouple UI from network operations.
+- Enforced strict ESLint and Prettier configurations for codebase uniformity.
+
+Documentation
+- Drafted a highly professional README.md including comprehensive feature matrices, visual architecture trees, and vertical screenshot demonstrations.
+- Produced docs/engineering_decisions.md detailing the rationale behind the Modular Monolith, PouchDB data strategy, and WebSocket necessity.
+- Produced docs/design_decisions.md detailing the component structural philosophy, the "Quiet Luxury" color theory, and physics-based animation rules.
+- Added a custom LICENSE explicitly dictating terms for a public portfolio repository.
+
+Repository Security & Version Control
+- Established a global root .gitignore to block OS-level artifacts (.DS_Store, Thumbs.db), editor settings, and temporary build outputs.
+- Established a backend-specific .gitignore strictly blocking the node_modules directory and preventing the hotel_booking_db PouchDB datastore from leaking to version control.
+- Created .env.example files for both frontend and backend to demonstrate 12-Factor App methodology configurations without exposing live secrets.

@@ -1,0 +1,45 @@
+# NestJS specific logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+compiled/
+build/
+
+# Testing
+coverage/
+
+# Environment
+.env
+.env.test
+.env.production
+.env.local
+
+# CRITICAL: Local Database Storage
+# Do NOT under any circumstances push the PouchDB local document store to GitHub.
+# It contains raw user data, bookings, and full application state.
+hotel_booking_db/
+.pouchdb/
+
+# IDEs and Editors
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.core

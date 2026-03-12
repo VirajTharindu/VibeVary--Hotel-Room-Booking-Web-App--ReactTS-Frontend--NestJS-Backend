@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #e11d48;
+  --color-brand-secondary: #fb7185;
+  --color-brand-gold: #f43f5e;
+  --color-background: #1a060e; /* Vibrant Crimson Rose Base */
+  --color-glass-base: rgba(26, 6, 14, 0.4);
+  
+  --font-sans: "Outfit", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+:root {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  font-weight: 300;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: #fff9f2;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Luxury Glassmorphism */
+.glass {
+  background: var(--color-glass-base);
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.text-reveal {
+  background: linear-gradient(to bottom, #fff 30%, rgba(255,255,255,0.4));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Rose Pulse Ripple */
+@keyframes gold-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(225, 29, 72, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(225, 29, 72, 0);
+  }
+}
+
+.animate-gold-pulse {
+  animation: gold-pulse 2s infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f0d1b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e11d48;
+}
+
+/* Lenis Smooth Scroll */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
